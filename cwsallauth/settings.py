@@ -24,6 +24,7 @@ INSTALLED_APPS = [
   'allauth.account',
   'allauth.socialaccount',
   'allauth.socialaccount.providers.github',
+  'allauth.socialaccount.providers.google',
 ]
 
 MIDDLEWARE = [
@@ -63,6 +64,13 @@ SOCIALACCOUNT_PROVIDERS = {
     'APP': {
       'client_id': 'eaff3a7eef5dee5c3277',
       'secret': 'e829c85b13ab390b0ef7ced4593aecb74f639682',
+      'key': ''
+    }
+  },
+  'google': {
+    'APP': {
+      'client_id': '253458130119-j15j9iilr6qp0ol4ok13k5hjrf44plc6.apps.googleusercontent.com',
+      'secret': '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',
       'key': ''
     }
   }
